@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenAI Demo</title>
+</head>
+<body>
+    <h1>OpenAI Demo</h1>
+    <form action="{{ url_for('generate_text') }}" method="POST">
+        <label for="prompt">Enter a prompt:</label>
+        <input type="text" name="prompt" id="prompt">
+        <button type="submit">Generate text</button>
+    </form>
+</body>
+</html>
